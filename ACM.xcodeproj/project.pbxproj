@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BB4D08F1177D803E002107F6 /* ACM.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB4D08F0177D803E002107F6 /* ACM.1 */; };
 		BB4D091B177DAD83002107F6 /* 1864.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB4D091A177DAD83002107F6 /* 1864.cpp */; };
+		BB4D0921177DAF99002107F6 /* 1257.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB4D0920177DAF99002107F6 /* 1257.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		BB4D08EA177D803E002107F6 /* ACM */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ACM; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4D08F0177D803E002107F6 /* ACM.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ACM.1; sourceTree = "<group>"; };
 		BB4D091A177DAD83002107F6 /* 1864.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 1864.cpp; path = HDOJ/1864.cpp; sourceTree = SOURCE_ROOT; };
+		BB4D0920177DAF99002107F6 /* 1257.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 1257.cpp; path = HDOJ/1257.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		BB4D08ED177D803E002107F6 /* ACM */ = {
 			isa = PBXGroup;
 			children = (
+				BB4D0920177DAF99002107F6 /* 1257.cpp */,
 				BB4D091A177DAD83002107F6 /* 1864.cpp */,
 				BB4D08F0177D803E002107F6 /* ACM.1 */,
 			);
@@ -118,6 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB4D091B177DAD83002107F6 /* 1864.cpp in Sources */,
+				BB4D0921177DAF99002107F6 /* 1257.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
