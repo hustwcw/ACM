@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB4D08EF177D803E002107F6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB4D08EE177D803E002107F6 /* main.cpp */; };
 		BB4D08F1177D803E002107F6 /* ACM.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB4D08F0177D803E002107F6 /* ACM.1 */; };
+		BB4D091B177DAD83002107F6 /* 1864.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB4D091A177DAD83002107F6 /* 1864.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 
 /* Begin PBXFileReference section */
 		BB4D08EA177D803E002107F6 /* ACM */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ACM; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB4D08EE177D803E002107F6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BB4D08F0177D803E002107F6 /* ACM.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ACM.1; sourceTree = "<group>"; };
+		BB4D091A177DAD83002107F6 /* 1864.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 1864.cpp; path = HDOJ/1864.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		BB4D08ED177D803E002107F6 /* ACM */ = {
 			isa = PBXGroup;
 			children = (
-				BB4D08EE177D803E002107F6 /* main.cpp */,
+				BB4D091A177DAD83002107F6 /* 1864.cpp */,
 				BB4D08F0177D803E002107F6 /* ACM.1 */,
 			);
 			path = ACM;
@@ -117,7 +117,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB4D08EF177D803E002107F6 /* main.cpp in Sources */,
+				BB4D091B177DAD83002107F6 /* 1864.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +208,7 @@
 				BB4D08F6177D803E002107F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
