@@ -12,14 +12,14 @@ int main()
     char c;
     while(scanf("%c", &c) != EOF)
     {
-        if(c == '\n')
+        if(c == '\r' || c == '\n')
         {
             if(maxlen < curlen)
             {
                 maxlen = curlen;
             }
-if(maxlen > 0)
-            cout << maxlen << endl;
+            if(maxlen > 0)
+                cout << maxlen << endl;
             maxlen = 0;
             count = 0;
             curlen = 0;
@@ -57,12 +57,6 @@ if(maxlen > 0)
         }
     }
     if(curlen > 0)
-        cout << curlen << endl;
+        cout << ((maxlen>curlen)?maxlen:curlen) << endl;
     return 0;
 }
-/**************************************************************
-    Problem: 1530
-    User: wangchengwen
-    Language: C++
-    Result: Wrong Answer
-****************************************************************/
