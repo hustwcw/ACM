@@ -12,22 +12,44 @@ using namespace std;
 
 
 // 快速排序无法找出逆序对个数
-int InversePairs(int *a, int *copy, int len)
+long long InversePairs(int *a, int *copy, int len)
 {
-    if (len == 0)
+    if (len < 2)
     {
-        return 0;
-    }
-    else if (len == 1)
-    {
-        copy[0] = a[0];
         return 0;
     }
 
     int x = len >> 1;
-    int left = InversePairs(copy, a, x);
-    int right = InversePairs(copy, a, len-x);
+    long long left = InversePairs(a, copy, x);
+    long long right = InversePairs(a+x, copy+x, len-x);
+    long long count = 0;
 
+    for(int i = 0; i < len; i++)
+    {
+        copy[i] = a[i];
+    }
+    int i = 0;
+    int j = x;
+    int k = 0;
+    while(i < x && j < len)
+    {
+        if (copy[i] > copy[j]) {
+            a[k++] = copy[j++];
+            count += (x-i);
+        }
+        else
+        {
+            a[k++] = copy[i++];
+        }
+    }
+    while(i < x)
+    {
+        a[k++] = copy[i++];
+    }
+    while(j < len)
+    {
+        a[k++] = copy[j++];
+    }
     return  left+ right + count;
 }
 
@@ -60,7 +82,7 @@ int main()
             copy[i] = a[i];
         }
 
-        printf("%d\n", InversePairs(a, copy, n));
+        printf("%lld\n", InversePairs(a, copy, n));
     }
 
     /*
