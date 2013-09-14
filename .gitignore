@@ -20,3 +20,5 @@ DerivedData
 *.out
 *.o
 core
+*.in
+*.out
