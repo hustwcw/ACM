@@ -12,6 +12,9 @@ int main()
     scanf("%d %d", &v, &d);
     double sin2 = 9.8*d/(v*v);
     double angle = 90.0*asin(sin2)/PI;
+    if (angle < 0) {
+      angle = 45-angle;
+    }
     printf("Case #%d: %.7lf\n", i, angle);
   }
 }
