@@ -18,7 +18,8 @@ int main()
     cin >> n;
     nameVec.clear();
     string temp;
-    cin.ignore ( std::numeric_limits<std::streamsize>::max(), '\n' );
+//    cin.ignore ( std::numeric_limits<std::streamsize>::max(), '\n' );
+    getline(cin, temp);
     for (int j = 0; j < n; j++) {
       getline(cin, temp);
       nameVec.push_back(temp);
