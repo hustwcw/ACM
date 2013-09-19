@@ -6,10 +6,10 @@
 
 using namespace std;
 
-bool isPalindrome(int n)
+bool isPalindrome(long long n)
 {
-	int result = 0;
-	int number = n;
+	long long result = 0;
+	long long number = n;
 	if(n < 0)
 	{
 		return false;
@@ -29,11 +29,11 @@ bool isPalindrome(int n)
 
 int main()
 {
-	int n;
-	int from, to;
-	set<int> pspSet;
+	long long n;
+	long long from, to;
+	set<long long> pspSet;
 	
-	for(int i = 1; i < 100000000000001; i++)
+	for(int i = 1; i < 10000001; i++)
 	{
 		if(isPalindrome(i) && isPalindrome(i*i))
 		{
@@ -42,6 +42,10 @@ int main()
 	}
 	
 	cout << pspSet.size() << endl;
+  for (auto iter = pspSet.begin(); iter != pspSet.end(); iter++)
+  {
+    cout << *iter << endl;
+  }
 	cin >> n;
 	for(int i = 0; i < n; i++)
 	{
