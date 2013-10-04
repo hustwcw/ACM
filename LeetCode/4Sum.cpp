@@ -16,35 +16,34 @@ public:
             return vector<vector<int> >();
         };
         sort(num.begin(), num.end());
-        return kSum(num, target, 4);
+        return kSum(num, target, 0, 4);
     }
     
-    vector<vector<int> > kSum(vector<int> &num, int target, int k)
+    vector<vector<int> > kSum(vector<int> &num, int target, int s, int k)
     {
         vector<vector<int> >result;
         if(k > 2)
         {
             vector<vector<int> > tmpResult;
             int last = INT_MIN;
-            for(int i = 0; i < num.size()-k+1; i++)
+            for(int i = s; i < num.size()-k+1; i++)
             {
                 if(num[i] == last)
                 {
                     continue;
                 }
                 last = num[i];
-                vector<int> tmpNum = vector<int>(num.begin()+i+1, num.end());
-                tmpResult = kSum(tmpNum, target-num[i], k-1);
+                tmpResult = kSum(num, target-num[i], i+1, k-1);
                 for(int k = 0; k < tmpResult.size(); k++)
                 {
-                		tmpResult[k].insert(tmpResult[k].begin(), num[i]);
+                        tmpResult[k].insert(tmpResult[k].begin(), num[i]);
                     result.push_back(tmpResult[k]);
                 }
             }
         }
         else
         {
-            int start = 0;
+            int start = s;
             int end = num.size()-1;
             vector<int> tmp;
             vector<int> old;
